@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./pokedex.css">
+    
+</head>
+<body>
+    <header>
+        <img src="./img/pokelogo.png" width="200px">
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+            <button onclick="fetchPokemon()" class="boton-menu">Buscar Pokemon</button><br>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section>
+        <div id = "Data" class="flex">
+            <div class="Data-general">
+                <H3>Datos Generales </H3>
+                <p>Nombre: Desconocido</p>
+                <p>ID: Desconocido</p>
+                <p>Peso: Desconocido</p>
+                <p>Altura: Desconocido</p>
+            </div>
+            <div class="Data-general">
+                <H3>Habilidades </H3>
+            </div>
+        </div>
+        <div id = "NF" class="pokedex">
+            <div class= "center">
+                <h1 id ="ID">? </h1><h1 id="Name">Pokeball</h1>
+                <img src="./img/Pokeball.png" alt="Pokemon" id="pokeImg" width="240px" height = "240px">
+            </div>
+        </div>
+        <div id = "Stats" class="flex">
+            <div class="Data-general">
+                <H3>Estadisticas </H3>
+                <p>Vida</p>
+                <progress max="100" value="50"></progress>
+                <p>Ataque</p>
+                <progress max="100" value="50"></progress>
+                <p>Defensa</p>
+                <progress max="100" value="50"></progress>
+                <p>Velocidad</p>
+                <progress max="100" value="50"></progress>
+            </div>
+            <div class="Data-general">
+                <H3>Tipo</H3>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
